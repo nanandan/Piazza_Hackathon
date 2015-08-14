@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+    textarea { vertical-align: top; }
+    .other-color{
+    background: CornflowerBlue
+    }
+    h1 {color:white}
+    </style>
+    
+    <script src="js/underscore.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/pagination.js"></script>
+
+
+    <script type="text/template" id="contact-template">
+    <% _.each(contacts, function(contact) { %>
+      <div class="contact">
+        <div class="upper">
+          <img src="<%= contact.imageUrl %>">
+          <span class="address"><%= contact.address %></span>
+          <a href="mailto:<%= contact.email %>" class="email"><%= contact.email %></a>
+          <span class="number"><%= contact.number %></span>
+        </div>
+        <div class="lower">
+          <span class="name"><%= contact.name %></span>
+        </div>
+      </div>
+    <% }); %>
+    </script>
+
+
+  </head>
+  <body>
+    <div class = "navbar navbar-inverse navbar-fixed-top">
+      <div class = "container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">Response Email</a>
+          <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class = "collapse navbar-collapse navHeaderCollapse">
+          <ul class = "nav navbar-nav navbar-right">
+            <li class = "active"><a href = "#">Home</a></li>
+            <li class = "dropdown">
+              <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Test <b class = "caret"></b></a>
+              <ul class = "dropdown-menu">
+                <li><a href = "#">Twitter</a></li>
+                <li><a href = "#">Facebook</a></li>
+                <li><a href = "#">Email</a></li>
+              </ul>
+            </li>
+            <li><a href = "#">Test</a></li>
+            <li><a href = "#">About</a></li>
+            <li><a href = "#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class = "container" style="padding-top: 70px;">
+      <div class="row">
+        <div class = "jumbotron other-color">
+          <h3>Welcome Nitesh!</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <h3>Email </h3>
+          <div>
+            Email To : <input type="text" name="FirstName" style="width: 500px;" id="text"><br>
+          </div>
+          <div>
+            Question : <textarea name="comments" cols="100" rows="20" style="background-color: #FCF5D8" id="search"></textarea><br>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <h3>Question?</h3>
+           <p id="questions1"> </p>
+           <input type="text" name="FirstName" style="width: 500px;" id="questions2"><br>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class = "navbar navbar-default navbar-fixed-bottom">
+      <div class = "container">
+        <p class = "navbar-text pull-left">Happy Coding!</p>
+        <a href = "#" class = "navbar-btn btn-info btn pull-right">Contact me</a>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
+
+<!-- -->
+<!-- --><!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script><style type="text/css"></style>
+
+   
+
+<!--
+
+<input type="text" id="search" placeholder="Type to search">
+<div id="t1">
+
+<table id="table">
+   <tr>
+      <td>Apple</td>
+      <td>Green</td>
+   </tr>
+   <tr>
+      <td>Grapes</td>
+      <td>Green</td>
+   </tr>
+   <tr>
+      <td>Orange</td>
+      <td>Orange</td>
+   </tr>
+</table>
+</div>
+
+<div id="t2">
+<table id="table2">
+   <tr>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+   </tr>
+</table>
+ </div>
+ <div id="isspace"></div>
+ <p id="char">This is a character </p>
+ <p id="char2">/////////////////// </p>
+ -->
+
+<script>
+
+var map = {"in javascript - sort algorithm?":"nebumewobi-6764@yopmail.com","Use VB.net to drop files in third-party window":"lettipiqu-3307@yopmail.com", "Security Access Denied Exception, WCF Trace , Reemote debugging":"offylluzo-5101@yopmail.com", 
+"Spreadsheet using JavaScript no HTML defined in body (Two Functions: Sum and AVG)":"uttottalu-1799@yopmail.com", "zesucequff-5879@yopmail.com":"felebydede-1948@yopmail.com", "Error in Stratified sampling.":"towezodann-4591@yopmail.com", "Get and Check Table Every Row Height Optimal Way":"fuddydemmadda-7312@yopmail.com", 
+"Unmarshal() is returning empty structs":"ettufattyru-6259@yopmail.com", "Meteor - ViewModel link to collection":"sexomorro-4810@yopmail.com", 
+"SecurityAccessDenied Exception, WCF Trace , Reemote debugging":"vewassexuv-8509@yopmail.com", "More beneficial way than thread a column in mysql":"qesommuddu-4437@yopmail.com"};
+
+
+var $rows = $('#table tr');
+var $rows2 = $('#table2 tr');
+var array = [];
+var array2 = [];
+var begin = 0;
+var end = 0;
+var ans = [];
+var ans2 = [];
+/*
+$(document).ready(function() {
+    $rows.hide();
+  });*/
+/*
+$('#search').keyup(function() {
+    
+    var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$',
+        reg = RegExp(val, 'i'),
+        text;
+    
+    $rows.show().filter(function() {
+        text = $(this).text().replace(/\s+/g, ' ');
+        return reg.test(text);
+    }).hide();
+});*/
+window.onkeydown = function(e) {
+	var key = e.keyCode ? e.keyCode : e.which;
+	if (key == 32) {
+		var words = $("#search").val().split(" ");
+		console.log("words are " + words);
+		for (var i = 0, keys = Object.keys(map), ii = keys.length; i < ii; i++) {
+		//  console.log('key : ' + keys[i] + ' val : ' + map[keys[i]]);
+			for(var k in words){
+				if(keys[i].indexOf(words[k]) > -1){
+
+					array.push(map[keys[i]]);
+					array2.push(keys[i]);
+					console.log("array is " + array);
+				}
+			}
+
+		}
+	
+		var text = document.getElementById('text');
+		text.value = (array);
+		console.log("text is " + document.getElementById('text').value + ",");
+		var quests = array2;
+		console.log("array2 is " + array2);
+		var text = document.getElementById('questions2');
+		text.value = (array2) + "\n";
+
+
+
+	}
+}
+
+</script>
